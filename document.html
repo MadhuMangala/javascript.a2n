@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function printform() {
+
+       var kanakam = document.getElementById('madhu')
+      var inputpass=document.getElementById('passwordinput')
+      var h1reference = document.getElementById('refform')
+
+       var amma= kanakam.value
+       var inputpasstext=inputpass.value
+      h1reference.innerText="form submitted"
+      var information={
+          Name:amma,
+          password:inputpasstext
+}
+console.log(information)
+           }
+    </script>
+</head>
+
+<body>
+    <div class="formality">
+    <div class="formss">
+        <h1 id="refform">login form</h1>
+        <div>
+            <label type="text">userName:</label>
+            <input class="border" type="text" placeholder="username" id="madhu"/>
+         </div><br>
+         <div>
+            <label type="text">password:</label>
+            <input  class="border"type="password" placeholder="password" id="passwordinput"/>
+         </div><br>
+         <div>
+            <input class="resert" type="button" value="login" onclick="printform()"/>
+         </div>
+
+
+
+    </div>
+    </div>
+
+</body>
+
+</html>
